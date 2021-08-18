@@ -1,4 +1,4 @@
-# Spotify-Music-Reccomendations-Private
+# Spotify-Music-Recomendations-Private
 Welcome to The Spotify Algorithm Playlist maker!
 First things first known bugs:
 1. When running the Spotify_login file 2 of the same webpage will open
