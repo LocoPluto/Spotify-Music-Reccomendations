@@ -2,14 +2,10 @@ from flask import Flask, request, url_for, session, redirect
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import json
-import webbrowser
-import time
-import sys
 
 app = Flask(__name__)
 
 app.secret_key = 'ONcs92894fhno'
-#app.config['SESSION_COOKIE_NAME'] = 'My Cookie'
 TOKEN_INFO = 'token_info'
 
 @app.route('/')
@@ -36,12 +32,10 @@ def redirectPage():
 
 def create_spotify_oauth():
     return SpotifyOAuth(
-        client_id = "7e42070283b24fb8a25f8e65c52f2eac",
-        client_secret = "79dc309b5c2044bb9bdac5beb8c62c7d",
+        client_id = Login_actions.id,
+        client_secret = Login_actions.secret,
         redirect_uri=url_for('redirectPage', _external=True),
         scope='user-read-private,playlist-modify-public')
 
-
-#FIXME opens 2 identical pages
-webbrowser.open('http://127.0.0.1:5000/')
-app.run(debug=True)
+import Login_actions
+app.run()
