@@ -1,12 +1,6 @@
 from tkinter import *
 from tkinter import messagebox
 import main
-import sys
-
-#FIXME Notes to do:
-"""
-1. create a way to remove songs artists and genres
-"""
 
 bg_color = 'black'
 fg_color = 'pale green'
@@ -201,7 +195,7 @@ def genre_window():
     home_button.grid(column=2, row=3, sticky=E)
 
 def param_window(tracks, artists, genres):
-    list = ['Acousticness', 'Danceability', 'Energy', 'Instrumentallness', 'Liveness', 'Loudness', '   Key   ', 'Tempo', 'popularity']
+    list = ['Acousticness', 'Danceability', 'Energy', 'Instrumentallness', 'Liveness', 'Loudness', '   Key   ', 'Tempo (BPM)', 'popularity']
     clear_frame()
     for num, param in enumerate(list):
         label = Label(text=param, bg=bg_color, fg=fg_color, font=font_code).grid(row=0, column=num)
@@ -273,7 +267,7 @@ def param_window(tracks, artists, genres):
 def create_playlist():
         playlist_create = main.add_to_playlist(recs.get_rec_uris(), playlist_name.get())
         num_songs_added = messagebox.showinfo('Success', f'{len(recs.get_rec_uris())} songs added to {playlist_name.get()}')
-        sys.exit()
+        quit()
 
 #FIXME maked wolf: astronaut in the ocean song add 40 songs you only get 37
 #less songs being added to playlist than shown
