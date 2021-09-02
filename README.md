@@ -4,9 +4,7 @@ First things first known bugs:
 1. When running the Spotify_login file 2 of the same webpage will open
 2. If you try to add 40 songs to a playlist sometimes a little less (like 38) will be added. I believe this is actually a bug with Spotify's api
 and not my fault from the testing I have done at least thats the story I am going with
-3. There is currently no way to remove songs artists or genres. If you need to do so restart the program its way easier than programming that in
-also I wanted to give this to Joey before he left for college and I am on a limited time schedule. I say this having 4.5 hours knowing well I am just
-too lazy
+3. There is currently no way to remove songs artists or genres. If you need to do so restart the program.
 4. The interface has not been tested on other computers. For all I know it may not work at all. This means there will probably be numerous
 weird looking things in the interface but it looks trash anyways so who cares.
 
