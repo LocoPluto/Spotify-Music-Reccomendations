@@ -5,7 +5,7 @@ import json
 
 app = Flask(__name__)
 
-app.secret_key = 'ONcs92894fhno'
+app.secret_key = ''
 TOKEN_INFO = 'token_info'
 
 @app.route('/')
