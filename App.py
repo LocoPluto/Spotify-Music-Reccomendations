@@ -269,9 +269,6 @@ def create_playlist():
         num_songs_added = messagebox.showinfo('Success', f'{len(recs.get_rec_uris())} songs added to {playlist_name.get()}')
         quit()
 
-#FIXME maked wolf: astronaut in the ocean song add 40 songs you only get 37
-#less songs being added to playlist than shown
-#
 def add_to_playlist():
     global playlist_name
     clear_frame()
